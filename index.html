@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sowjith Anumola – CV</title>
+<style>
+  :root {
+    --navy: #0b1f3a;
+    --blue: #3b6ea8;
+    --soft: #e8f0fa;
+    --text: #1c2733;
+    --muted: #5a6877;
+    --rule: #c9d6e6;
+    --bg: #eef2f7;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", "DejaVu Sans", sans-serif;
+    font-size: 10.8pt;
+    line-height: 1.4;
+  }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .toolbar { text-align: center; padding: 14px 10px 0; }
+  .toolbar button {
+    background: var(--navy); color: #fff; border: 0; border-radius: 6px;
+    padding: 10px 20px; font: inherit; font-size: 11pt; font-weight: 600; cursor: pointer;
+  }
+  .toolbar button:hover { background: #163a66; }
+  .toolbar p { margin: 6px 0 0; font-size: 9pt; color: var(--muted); }
+
+  .page {
+    width: 210mm; min-height: 297mm;
+    margin: 14px auto 28px;
+    background: var(--paper);
+    padding: 14mm 15mm 12mm;
+    box-shadow: 0 2px 14px rgba(11, 31, 58, .15);
+  }
+
+  header { border-bottom: 2.5px solid var(--navy); padding-bottom: 8px; }
+  h1 { margin: 0; font-size: 25pt; line-height: 1.1; color: var(--navy); letter-spacing: .3px; }
+  .headline { margin: 3px 0 7px; font-size: 11.5pt; font-weight: 600; color: var(--blue); }
+  .contact { display: flex; flex-wrap: wrap; gap: 2px 16px; font-size: 9pt; color: var(--text); }
+  .contact span b { color: var(--navy); font-weight: 600; }
+
+  section { margin-top: 15px; }
+  h2 {
+    margin: 0 0 5px; padding-bottom: 2px;
+    font-size: 10.5pt; letter-spacing: 1.4px; text-transform: uppercase;
+    color: var(--navy); border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0; }
+
+  .skills { display: grid; grid-template-columns: 34mm 1fr; gap: 3px 10px; font-size: 10pt; }
+  .skills dt { font-weight: 600; color: var(--navy); }
+  .skills dd { margin: 0; }
+
+  .projects { list-style: none; margin: 0; padding: 0; column-count: 2; column-gap: 9mm; }
+  .projects li {
+    break-inside: avoid; margin: 0 0 7px; padding-left: 7mm; position: relative;
+    font-size: 10pt; line-height: 1.32;
+  }
+  .projects .n {
+    position: absolute; left: 0; top: 0; width: 5.5mm; text-align: right;
+    color: var(--blue); font-weight: 600; font-size: 8.5pt;
+  }
+  .projects .name { font-weight: 700; color: var(--navy); }
+  .projects .desc { color: var(--text); }
+  .projects .url { display: block; font-size: 8.8pt; color: var(--blue); word-break: break-all; }
+
+  .edu .row { display: flex; justify-content: space-between; gap: 10px; }
+  .edu .school { font-weight: 700; color: var(--navy); }
+  .ph { background: var(--soft); color: var(--navy); padding: 0 3px; border-radius: 2px; }
+  .edu ul { margin: 3px 0 0; padding-left: 16px; font-size: 10pt; }
+
+  /* Screen: narrow viewports */
+  @media screen and (max-width: 820px) {
+    .page { width: auto; min-height: 0; margin: 10px; padding: 18px 16px; }
+    .projects { column-count: 1; }
+    .skills { grid-template-columns: 1fr; }
+    .skills dt { margin-top: 4px; }
+    h1 { font-size: 21pt; }
+    .edu .row { flex-direction: column; gap: 0; }
+  }
+
+  /* Print: A4 portrait */
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    body { background: #fff; }
+    .toolbar { display: none !important; }
+    .page { width: 210mm; min-height: 0; margin: 0; padding: 13mm 15mm 10mm; box-shadow: none; }
+    a { color: var(--blue); }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button type="button" id="saveBtn">Save as PDF / Print</button>
+  <p>In the print dialog choose “Save as PDF”, paper size A4, margins “None”.</p>
+</div>
+
+<main class="page">
+  <header>
+    <h1>Sowjith Anumola</h1>
+    <div class="headline">Young Developer | AI Tools Builder | Solo Coder</div>
+    <div class="contact">
+      <span><b>Email:</b> <a href="mailto:sowjith.anumola@gmail.com">sowjith.anumola@gmail.com</a></span>
+      <span><b>Portfolio:</b> <a href="https://sowjith.vercel.app/">sowjith.vercel.app</a></span>
+      <span><b>GitHub:</b> <a href="https://github.com/sowjithanumola">github.com/sowjithanumola</a></span>
+      <span><b>Reddit:</b> <a href="https://www.reddit.com/user/i-am-sowjith/">u/i-am-sowjith</a></span>
+      <span><b>Threads:</b> <a href="https://www.threads.com/@i.am.sowjith">@i.am.sowjith</a></span>
+      <span><b>Discord:</b> i.am.sowjith</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>Young, self-driven developer who builds AI tools, web applications, productivity products, and creative software on his own. Has designed, built, and deployed 25 independent projects online, from productivity and learning tools to browser-based video, photo, and music studios. Works hands-on with TypeScript, Vite, Supabase, and Git/GitHub, and keeps learning by shipping new ideas.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Development</dt>
+      <dd>Web development, TypeScript, HTML, CSS, Vite</dd>
+      <dt>AI &amp; Products</dt>
+      <dd>AI application development, AI tools, productivity apps, creative software</dd>
+      <dt>Tools &amp; Platforms</dt>
+      <dd>Git, GitHub, Vercel, Supabase</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ol class="projects">
+      <li><span class="n">1.</span><a class="name" href="https://emo-lens.vercel.app/">EmoLens</a><a class="url" href="https://emo-lens.vercel.app/">https://emo-lens.vercel.app/</a></li>
+      <li><span class="n">2.</span><a class="name" href="https://viral-forge-five.vercel.app/">Viral Forge</a><a class="url" href="https://viral-forge-five.vercel.app/">https://viral-forge-five.vercel.app/</a></li>
+      <li><span class="n">3.</span><a class="name" href="https://mail-craft-two.vercel.app/">Mail Craft</a><a class="url" href="https://mail-craft-two.vercel.app/">https://mail-craft-two.vercel.app/</a></li>
+      <li><span class="n">4.</span><a class="name" href="https://note-snap-three.vercel.app/">Note Snap</a><a class="url" href="https://note-snap-three.vercel.app/">https://note-snap-three.vercel.app/</a></li>
+      <li><span class="n">5.</span><a class="name" href="https://te-x-forge-two.vercel.app/">Te-X Forge</a><a class="url" href="https://te-x-forge-two.vercel.app/">https://te-x-forge-two.vercel.app/</a></li>
+      <li><span class="n">6.</span><a class="name" href="https://link-sense-ai.vercel.app/">Link Sense AI</a><a class="url" href="https://link-sense-ai.vercel.app/">https://link-sense-ai.vercel.app/</a></li>
+      <li><span class="n">7.</span><a class="name" href="https://mentor-ai-murex.vercel.app/">Mentor AI</a><a class="url" href="https://mentor-ai-murex.vercel.app/">https://mentor-ai-murex.vercel.app/</a></li>
+      <li><span class="n">8.</span><a class="name" href="https://ink-whisper.vercel.app/">InkWhisper</a><a class="url" href="https://ink-whisper.vercel.app/">https://ink-whisper.vercel.app/</a></li>
+      <li><span class="n">9.</span><a class="name" href="https://neuro-draw.vercel.app/">Neuro Draw</a><a class="url" href="https://neuro-draw.vercel.app/">https://neuro-draw.vercel.app/</a></li>
+      <li><span class="n">10.</span><a class="name" href="https://focus-mate-rho.vercel.app/">Focus Mate</a> <span class="desc">– productivity and focus application</span><a class="url" href="https://focus-mate-rho.vercel.app/">https://focus-mate-rho.vercel.app/</a></li>
+      <li><span class="n">11.</span><a class="name" href="https://zozo-two-theta.vercel.app/">Zozo</a><a class="url" href="https://zozo-two-theta.vercel.app/">https://zozo-two-theta.vercel.app/</a></li>
+      <li><span class="n">12.</span><a class="name" href="https://vorathi.vercel.app/">Vorathi</a><a class="url" href="https://vorathi.vercel.app/">https://vorathi.vercel.app/</a></li>
+      <li><span class="n">13.</span><a class="name" href="https://giddu-phi.vercel.app/">Giddu</a><a class="url" href="https://giddu-phi.vercel.app/">https://giddu-phi.vercel.app/</a></li>
+      <li><span class="n">14.</span><a class="name" href="https://career-advisor-eight.vercel.app/">Career Advisor</a><a class="url" href="https://career-advisor-eight.vercel.app/">https://career-advisor-eight.vercel.app/</a></li>
+      <li><span class="n">15.</span><a class="name" href="https://nova-mind-azure.vercel.app/">NovaMind</a><a class="url" href="https://nova-mind-azure.vercel.app/">https://nova-mind-azure.vercel.app/</a></li>
+      <li><span class="n">16.</span><a class="name" href="https://opencut-video-editor-three.vercel.app/">OpenCut Studio</a> <span class="desc">– browser-based video editing project</span><a class="url" href="https://opencut-video-editor-three.vercel.app/">https://opencut-video-editor-three.vercel.app/</a></li>
+      <li><span class="n">17.</span><a class="name" href="https://pro-photo-studio-sepia.vercel.app/">ProPhoto Studio</a> <span class="desc">– photo editing project</span><a class="url" href="https://pro-photo-studio-sepia.vercel.app/">https://pro-photo-studio-sepia.vercel.app/</a></li>
+      <li><span class="n">18.</span><a class="name" href="https://echoroom-nu.vercel.app/">ECHOROOM Music Studio</a> <span class="desc">– browser-based music creation, recording, and editing studio</span><a class="url" href="https://echoroom-nu.vercel.app/">https://echoroom-nu.vercel.app/</a></li>
+      <li><span class="n">19.</span><a class="name" href="https://xrayhand-rel4jry7.manus.space/">XRay Hand</a><a class="url" href="https://xrayhand-rel4jry7.manus.space/">https://xrayhand-rel4jry7.manus.space/</a></li>
+      <li><span class="n">20.</span><a class="name" href="https://xray2-five.vercel.app/">XRay 2</a><a class="url" href="https://xray2-five.vercel.app/">https://xray2-five.vercel.app/</a></li>
+      <li><span class="n">21.</span><a class="name" href="https://luminance-navy.vercel.app/">Luminance</a><a class="url" href="https://luminance-navy.vercel.app/">https://luminance-navy.vercel.app/</a></li>
+      <li><span class="n">22.</span><a class="name" href="http://chess-game-tau-brown.vercel.app/">Chess Game</a><a class="url" href="http://chess-game-tau-brown.vercel.app/">http://chess-game-tau-brown.vercel.app/</a></li>
+      <li><span class="n">23.</span><a class="name" href="https://tictactoe-sandy-two-22.vercel.app/">Tic Tac Toe</a><a class="url" href="https://tictactoe-sandy-two-22.vercel.app/">https://tictactoe-sandy-two-22.vercel.app/</a></li>
+      <li><span class="n">24.</span><a class="name" href="https://multiplayer-racing.vercel.app/">Multiplayer Racing</a><a class="url" href="https://multiplayer-racing.vercel.app/">https://multiplayer-racing.vercel.app/</a></li>
+      <li><span class="n">25.</span><a class="name" href="https://scorearena-mu.vercel.app/">ScoreArena</a><a class="url" href="https://scorearena-mu.vercel.app/">https://scorearena-mu.vercel.app/</a></li>
+    </ol>
+  </section>
+
+  <section class="edu">
+    <h2>Education</h2>
+    <div class="row">
+      <span class="school">Mount Carmel Global School</span>
+      <span>Class 9</span>
+    </div>
+  </section>
+</main>
+
+<script>
+  document.getElementById('saveBtn').addEventListener('click', function () { window.print(); });
+</script>
+</body>
+</html>
